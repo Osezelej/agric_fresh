@@ -1,11 +1,19 @@
 import {Head, Html} from 'next/document';
-import { Header } from './head';
-import PageNav from './pageNav';
+import { Header } from './header/head';
+import PageNav from './header/pageNav';
+import Footer from './footer/footer';
+import { useEffect, useState } from 'react';
+
 var layout = (props) => {
+    const [width, setWidth] = useState()
+    useEffect(()=>(setWidth(window.innerWidth)), [])
+    
     return<>
         <Header />
-        <PageNav />
+        <PageNav windowWidth={width} />
         {props.children}
+        <Footer />
+        
     </>
     
 }

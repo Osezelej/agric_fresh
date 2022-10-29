@@ -1,6 +1,6 @@
 var Category = () =>{
     return <>
-        <div className="Category">
+        <div className="category" >
             <p>
                 <strong>
                     Shop by Category.
