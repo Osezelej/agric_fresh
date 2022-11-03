@@ -1,0 +1,173 @@
+const data = [
+    'https://marketsng.fra1.digitaloceanspaces.com/images/nTsHve64pZKvDFFjE5cxvTYaDq8WvDAIwyfJrm944.png',
+
+    'https://marketsng.fra1.digitaloceanspaces.com/images/SZJztqE39fblPIEWTOEWDCX0G4KIpmMJGqce0Hch.png',
+
+    'https://marketsng.fra1.digitaloceanspaces.com/images/4szEleKYsJKhHuYPcsbYPxIpmupG2DsGOaMLoAXq.png'
+]
+
+const dataApi = [
+    {
+	'Name': 'full chicken', 
+  	'Image':"https://www.kindpng.com/picc/m/459-4590151_poultry-whole-chicken-me-like-one-of-your.png",
+	'Price': "N4500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Chicken Eggs', 
+  	'Image':"https://www.nicepng.com/png/detail/11-113565_egg-eggs-clipart.png",
+	'Price': "N2500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Titus Fish', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/ypD5ZAcFcMGqKveA5BSWm5qeEFSULjCaTEtqGruM.jpg",
+	'Price': "N1700",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Green Pepper', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/NUniwT0HgvJMQTxR7OSiUuakDNRHZfX04KKHkXAS.jpg",
+	'Price': "N1200",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Tomatoes', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/5ze2dvcx7etDgGIKC3rQtB6Hipncx9E9THmWcD04.jpg",
+	'Price': "N1300",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Tatashe', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/u6mrfTRjnnMhgLRMEi8SocO3gVAcWlGWaIT95Edu.png",
+	'Price': "N700",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Pineaple', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/U3BxaCfiI55wpTeH1Yi6zaM5wPgCyORj11O3UzAK.jpg",
+	'Price': "N1500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Apples', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/NUwV3aoQXwq9BeQkJoqYQGHZ1mwpQEbdhBrK5pDO.jpg",
+	'Price': "N500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Apples', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/NUwV3aoQXwq9BeQkJoqYQGHZ1mwpQEbdhBrK5pDO.jpg",
+	'Price': "N500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Tangerine', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/MUwUhLef15gD4B2TluQVD8C4vByYazk70UGaxF6q.jpg",
+	'Price': "N500",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Bitter Leave', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/RjHk7qmAAvweHDM33pWsfzv1XL6B3rdgiy0rXRad.jpg",
+	'Price': "N200",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Okra', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/FnH1RO7f412FrMna1B2NPeiYMjAA5J2SHj92Hy42.jpeg",
+	'Price': "N200",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Cray fish', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/Pslms7s16EQZzuR42abMSGPPN7IVJv7SlD6cWaiG.jpg",
+	'Price': "N12200",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Croaker fish', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/4iBaKLH05jKYNXhW6t0WO32BbE7uJPGEBH7748yW.png",
+	'Price': "N1250",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Locust beans', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/U5YGMfeJotBRwNI5C8IkbYZ4i44NLhyqGeBvttjY.jpeg",
+	'Price': "N1350",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Locust beans', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/U5YGMfeJotBRwNI5C8IkbYZ4i44NLhyqGeBvttjY.jpeg",
+	'Price': "N1350",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Smoked Titus Fish', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/RCDaYrbdUG1QlZLgVMBLBc22R4JBEMmqosxZLDca.png",
+	'Price': "N750",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Cabagage', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/n6Ej0C7V46sk9yppitA5Dv1UkBrIG9RAloJZcjLP.png",
+	'Price': "N1550",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Spring onions', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/nvHW14JZrfZ7txBJc6hnqESr5i5O6ZcZx7U7nPta.jpeg",
+	'Price': "N1550",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Brocolli', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/LHzmU1bxFRnzCdmZ1OVdc5NRifuyZB0HwgpRKITW.jpg",
+	'Price': "N4550",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Purple Cabbages', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/hnjZCi54mK5ahN0GCfMQNmuD37E8KYCzYISuUZRY.jpg",
+	'Price': "N2000",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Rice', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/hpJUfkCmUdozgEGZI32poFJEiUmXgGextz3PuCCN.png",
+	'Price': "N40000",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+{
+	'Name': 'Ribenna', 
+  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/ZStaIC6gzyDOcgxNvxnIY0h1J4NQxH3DmTwsUDd2.jpg",
+	'Price': "N700",
+	'description': '',
+	'Nutritional Benefit': [],
+},
+]
+
+export {data, dataApi};
