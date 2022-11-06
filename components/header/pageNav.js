@@ -22,10 +22,11 @@ var PageNav = (props) =>{
             display:text.display,
             flexDirection:'column',
             padding:'20px',
-            backgroundColor:'#198754',
+            backgroundColor:'#ffff',
+            
             rowGap:'20px',
             fontWeight:'800',
-            transition:'0.3s'
+            
         }
     }
 

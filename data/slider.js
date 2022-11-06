@@ -1,6 +1,4 @@
 const data = [
-    'https://marketsng.fra1.digitaloceanspaces.com/images/nTsHve64pZKvDFFjE5cxvTYaDq8WvDAIwyfJrm944.png',
-
     'https://marketsng.fra1.digitaloceanspaces.com/images/SZJztqE39fblPIEWTOEWDCX0G4KIpmMJGqce0Hch.png',
 
     'https://marketsng.fra1.digitaloceanspaces.com/images/4szEleKYsJKhHuYPcsbYPxIpmupG2DsGOaMLoAXq.png'
