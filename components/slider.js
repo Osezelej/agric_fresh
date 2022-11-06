@@ -2,7 +2,7 @@ import style from '../styles/Home.module.css'
 var Slider = (props)=>{
     return<>
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
+        <div className="carousel-indicators">
             <button id='sliderIndicator1' type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className={`active ${style.sliderIndicator}`} aria-current="true" aria-label="Slide 1"></button>
             <button id='sliderIndicator2' type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" className="slider-indicator" aria-label="Slide 2"></button>
             {/* <button id='sliderIndicator3' type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" className="slider-indicator" aria-label="Slide 3"></button> */}

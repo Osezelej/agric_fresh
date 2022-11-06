@@ -1,9 +1,10 @@
 import Adverts from '../components/Advert';
 import HomeProducts from '../components/homeProduct';
-import Product from '../components/product';
+import Product from '../components/productComponent';
 import Slider from '../components/slider';
-import {data} from '../data/slider';
-import { dataApi } from "../data/slider"
+import {data} from '../data/sliders';
+import { dataApi } from "../data/sliders"
+
 
 export const getStaticProps = async()=>{
     return {
@@ -12,18 +13,24 @@ export const getStaticProps = async()=>{
 }
 
 var home = ({food}) =>{
-console.log(food)
+
   return (<div >
-      <Slider data = {data}/>
-      <Adverts/>
-      <HomeProducts/>
-      <div className="product Container">
-          <h3>
-            Top Products
-          </h3>
-          <Product/>
-      </div>
-  </div>
+        <Slider data = {data}/>
+        <Adverts/>
+        <HomeProducts/>
+        <a className="product container" href='/products'>
+            <h3>
+              Top Products
+            </h3>
+            <div className="product-container">
+            {food.map((details)=>(
+            <Product
+              key = {details.id}
+              foodDetail = {details}
+              />))}
+            </div>
+        </a>
+    </div>
 );
 }
 export default home;
