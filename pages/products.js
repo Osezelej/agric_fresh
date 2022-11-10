@@ -13,7 +13,7 @@ var Products = ({foods}) => {
     
         <div className="product container">
             <h2>Market Place</h2>
-            <div className="productContainer">
+            <div className="product-container">
                 
                 {foods.map((details)=>(<Product
               key = {details.id}

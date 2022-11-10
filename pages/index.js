@@ -2,17 +2,22 @@ import Adverts from '../components/Advert';
 import HomeProducts from '../components/homeProduct';
 import Product from '../components/productComponent';
 import Slider from '../components/slider';
+import Testimony from '../components/testimonies';
 import {data} from '../data/sliders';
-import { dataApi } from "../data/sliders"
+import { dataApi } from "../data/sliders";
+import testimonyData from '../data/testimoniesData';
 
 
 export const getStaticProps = async()=>{
     return {
-        props: {food:dataApi.slice(0, 4)}
+        props: {
+          food:dataApi.slice(0, 4),
+          testimonies: testimonyData,
+        }
     }
 }
 
-var home = ({food}) =>{
+var home = ({food, testimonies}) =>{
 
   return (<div >
         <Slider data = {data}/>
@@ -30,6 +35,15 @@ var home = ({food}) =>{
               />))}
             </div>
         </a>
+        <div className="testimony-container">
+          {testimonies.map((testimony)=>(
+            <Testimony
+            key ={testimony.Name}
+            data={testimony}
+            />
+            ))
+            }
+        </div>
     </div>
 );
 }

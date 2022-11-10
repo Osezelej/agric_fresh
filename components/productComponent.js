@@ -20,8 +20,8 @@ var Product = (props)=>{
             </div>
             <div className='product-details'>
                 <div className='star'>
-                    {goodRatingArray.map((x)=>(<img key = {x} src='/goodstar.png'/>))}
-                    {badRatingArray.map((x)=>(<img key={x} src='/badstar.png'/>))}
+                    {goodRating ? goodRatingArray.map((x)=>(<img key = {x} src='/goodstar.png'/>)):null}
+                    {badRating ? badRatingArray.map((x)=>(<img key={x} src='/badstar.png'/>)):null}
                 </div>
                 <div className='Name-price'>
                     <p className='Name'>{foodDetail.Name}</p>
