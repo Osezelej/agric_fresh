@@ -18,7 +18,7 @@ var home = ({food}) =>{
         <Slider data = {data}/>
         <Adverts/>
         <HomeProducts/>
-        <a className="product container" href='/products'>
+        <a className="product container" href='/products' style={{color:'black', textDecoration:'None'}}>
             <h3>
               Top Products
             </h3>
