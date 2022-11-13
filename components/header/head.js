@@ -14,7 +14,7 @@ export function Header(){
                     <div className="phone icon_info">(+234)08076320300</div>
                     <div className="input-col" >
                         <input className="form-control search_input" placeholder="Category | search for product... "/>
-                        <button className="btn btn-success search_button">search</button>
+                        <button className="btn btn-outline-success search_button"><Image src={'/search.png'} width={20} height={20}/></button>
 
                         <div className="account">
                         <Image src={'/account.png'} width={20} height={20}/>

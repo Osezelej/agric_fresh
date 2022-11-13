@@ -12,14 +12,19 @@ const Testimony = (props)=>{
     for (let i = 0; i < badRating; i++) {
         badRatingArray.push(i);
     }
+    const color = [
+        '#f0a4ff',
+        '#fce97d',
+        '#baa7ff'
+    ];
 
     return<>
-        <div className="testimony-body">
+        <div className="testimony-body" style={{backgroundColor:color[Math.floor(Math.random()* color.length) ]}}>
             <div className="user-details">
                 <Image src={'/account.png'} width={20} height={20}/>
                 <div className='user-info'>
-                    <p><strong>Testifier Name</strong></p>
-                    <p>~Occupation</p>
+                    <p><strong>{data.Name}</strong></p>
+                    <p className="job">~{data.occupation}</p>
                 </div>
             </div>
             <div className='user-testimony'>

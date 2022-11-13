@@ -6,6 +6,11 @@ html,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+a{
+  color:black;
+  text-decoration: none;
+}
+
 .account{
   width: fit-content;
   flex: 1;
@@ -14,12 +19,12 @@ html,
 }
 
 .account img{
-  padding: 5px 3px;
-  height: 45px;
-  width:45px;
+  padding: 5px 5px;
+  height: 35px;
+  width:35px;
   border-style: solid;
   border-radius: 50px;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #198754;
 }
 
@@ -48,7 +53,7 @@ background-color:rgb(198, 200, 201);
 
 .ad4{
   margin-right: auto;
-margin-left: auto;
+  margin-left: auto;
   padding: 120px;
   background-color:rgb(250, 174, 190);
 }
@@ -73,11 +78,11 @@ margin-left: auto;
 }
 
 .cart img{
-  height: 45px;
-  width:45px;
+  height: 35px;
+  width:35px;
   border-style: solid;
   border-radius: 50px;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #198754;
 }
 
@@ -86,6 +91,7 @@ margin-left: auto;
   color: rgb(68, 67, 67);
   font-size: 20px;
 }
+
 .contact-mess{
   padding: 5px 0;
   font-size: 15px;
@@ -93,15 +99,26 @@ margin-left: auto;
 }
 
 .category{
+  display: flex;
   min-width: max-content;
   font-size: 13px;
-  padding: 15px 15px;
+  padding: 9px 15px;
   background-color: rgb(255, 215, 37);
   border-radius: 25px;
+  gap:20px;
+  align-items: center;
 }
 
 .category p{
   margin: 0;
+}
+
+.category button{
+  background-color: rgb(255, 215, 37);
+  padding: 1px;
+  border-style: none;
+  transition: 0.1s ease;
+
 }
 
 .containers{
@@ -201,6 +218,7 @@ margin-left: auto;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 1px;
   row-gap: 0px;
+  align-items: center;
   }
 
 .icon{
@@ -288,8 +306,9 @@ z-index: 3;
 }
 
 
-.product h3{
+h3{
   text-align: center;
+
 }
 
 .product-container{
@@ -306,6 +325,10 @@ margin: 25px 0;
   flex: 1;
   font-size: 13px;
   max-height: 45px;
+  border-color: #198754;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .search_input{
@@ -331,6 +354,26 @@ display: flex;
 gap: 3px;
 }
 
+.testimony{
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 30px;
+background-color: #f1f1f1;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.testimony-body{
+display: flex;
+flex-direction: column;
+padding: 25px;
+align-items: flex-start;
+justify-content: center;
+gap: 20px;
+border-radius: 10px;
+}
+
 .title{
   font-size: 22px;
   padding-bottom:15px ;
@@ -348,6 +391,38 @@ gap: 3px;
 .usefull-links a{
   text-decoration: none;
 
+}
+
+.user-details{
+  display: flex;
+  gap: 13%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.user-details img{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #929493;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 19px;
+}
+
+.user-details p{
+margin: 0;
+font-size: large;
+}
+
+.user-details .job{
+  margin: 0;
+  font-size: 13px;
+  
+  }
+.user-testimony{
+  font-size: 25px;
+  font-weight: 700;
+  font-family:sans-serif;
 }
 
 #sliderIndicator1{
@@ -389,6 +464,16 @@ ul li::before{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+  .account img{
+    padding: 5px 5px;
+    height: 45px;
+    width:45px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #198754;
+  }
   .ad1{
   background-color:rgb(174, 226, 250);
   }
@@ -414,6 +499,14 @@ ul li::before{
     display: flex;
     justify-content: center;
 
+  }
+  .cart img{
+    height: 45px;
+    width:45px;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #198754;
   }
 
   .category{
@@ -565,7 +658,7 @@ ul li::before{
     display: none;
   }
 
-    .search_input{
+  .search_input{
       flex: 10;
       max-height: 50px;
       margin-right: 10px;
@@ -573,12 +666,24 @@ ul li::before{
       
     }
     
-    .search_button{
+  .search_button{
       max-height: 50px;
     }
-    .sliderImg{
+  .sliderImg{
       height:30%;
     }
+  .testimony{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+      background-color: #f1f1f1;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+      
+
 }
 
 @media only screen and (min-width:500px) {

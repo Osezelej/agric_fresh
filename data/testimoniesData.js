@@ -7,7 +7,7 @@ const testimonyData = [
     },
     {
         Name: 'Nicholas',
-        occupation: '',
+        occupation: 'Driver',
         rating:5,
         testimony: 'I love Agric fresh',
     },

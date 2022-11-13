@@ -35,15 +35,25 @@ var home = ({food, testimonies}) =>{
               />))}
             </div>
         </a>
-        <div className="testimony-container">
-          {testimonies.map((testimony)=>(
-            <Testimony
-            key ={testimony.Name}
-            data={testimony}
-            />
-            ))
-            }
+        <h3>What People Say</h3>
+        <div className="testimony container">
+           
+            {testimonies.map((testimony)=>(
+              <Testimony
+              key ={testimony.Name}
+              data={testimony}
+              />
+              ))
+              }
         </div>
+        <h3>Best Seller This week</h3>
+        <div className="product-container">
+            {food.map((details)=>(
+            <Product
+              key = {details.id}
+              foodDetail = {details}
+              />))}
+            </div>
     </div>
 );
 }
