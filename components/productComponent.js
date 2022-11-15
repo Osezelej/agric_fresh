@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { useState } from 'react';
 var Product = (props)=>{
     // organising the rating of defferent product
     let {foodDetail} = props
@@ -12,9 +14,11 @@ var Product = (props)=>{
     for (let i = 0; i < badRating; i++) {
         badRatingArray.push(i);
     }
+    
 
     return <>
-        <div className='items'>
+    <div className='items'>
+    <Link href={props.isProduct?`/description/${foodDetail.Name}`:'/products'}>
             <div className='image'>
                 <img id='productImages' src={foodDetail.Image} />
             </div>
@@ -29,8 +33,10 @@ var Product = (props)=>{
                 </div>
                 <button className='btn btn-success cart-button'>Add to Cart</button>
             </div>
-
+            </Link>
         </div>
+    
+
     </>
 }
 export default Product

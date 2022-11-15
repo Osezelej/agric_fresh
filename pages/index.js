@@ -6,6 +6,7 @@ import Testimony from '../components/testimonies';
 import {data} from '../data/sliders';
 import { dataApi } from "../data/sliders";
 import testimonyData from '../data/testimoniesData';
+import Link from 'next/link';
 
 
 export const getStaticProps = async()=>{
@@ -18,12 +19,11 @@ export const getStaticProps = async()=>{
 }
 
 var home = ({food, testimonies}) =>{
-
   return (<div >
         <Slider data = {data}/>
         <Adverts/>
         <HomeProducts/>
-        <a className="product container" href='/products' style={{color:'black', textDecoration:'None'}}>
+        <Link className="product container" href='/products' style={{color:'black', textDecoration:'None'}}>
             <h3>
               Top Products
             </h3>
@@ -32,9 +32,10 @@ var home = ({food, testimonies}) =>{
             <Product
               key = {details.id}
               foodDetail = {details}
+              isProduct = {false}
               />))}
-            </div>
-        </a>
+            </div> 
+        </Link>
         <h3>What People Say</h3>
         <div className="testimony container">
            
@@ -52,6 +53,7 @@ var home = ({food, testimonies}) =>{
             <Product
               key = {details.id}
               foodDetail = {details}
+              isProduct = {true}
               />))}
             </div>
     </div>

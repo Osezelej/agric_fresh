@@ -9,8 +9,8 @@ export const getStaticProps = async ()=>{
 }
 
 var Products = ({foods}) => {
+
     return (<>
-    
         <div className="product container">
             <h2>Market Place</h2>
             <div className="product-container">
@@ -18,6 +18,7 @@ var Products = ({foods}) => {
                 {foods.map((details)=>(<Product
               key = {details.id}
               foodDetail = {details}
+              isProduct = {true}
               />))}
             </div>
         </div>

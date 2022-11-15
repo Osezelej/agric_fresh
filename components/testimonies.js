@@ -15,7 +15,7 @@ const Testimony = (props)=>{
     const color = [
         '#f0a4ff',
         '#fce97d',
-        '#baa7ff'
+        '#baa7ff',
     ];
 
     return<>
