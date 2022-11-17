@@ -1,5 +1,8 @@
 import { dataApi} from '../../data/sliders';
 import Head from 'next/head';
+import DescriptionProducts from '../../components/description/product';
+import Product from '../../components/productComponent';
+import ItemInfo from '../../components/itemInfo';
 export const getStaticPaths = async()=>{
     const data = dataApi
     const path = data.map((details)=>{
@@ -19,17 +22,20 @@ export const getStaticProps = async (context)=>{
     })
     return{
         props:{
-            detail:data
+            detail:data,
+            food:dataApi.slice(0, 4)
         }
     }
 }
-var Description = ({detail}) =>{
-    console.log(detail)
+var Description = ({detail, food}) =>{
+    console.log(detail[0])
+    let product_details = detail[0]
     
     return <>
-        <Head>
-            <title>{detail.Name}</title>
-        </Head>
-    </>
+        <DescriptionProducts
+            productDetails = {product_details}
+        />
+        <ItemInfo />
+    </> 
 }
 export default Description;
