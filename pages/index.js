@@ -1,5 +1,4 @@
 import Adverts from '../components/Advert';
-import HomeProducts from '../components/homeProduct';
 import Product from '../components/productComponent';
 import Slider from '../components/slider';
 import Testimony from '../components/testimonies';
@@ -22,7 +21,7 @@ var home = ({food, testimonies}) =>{
   return (<div >
         <Slider data = {data}/>
         <Adverts/>
-        <HomeProducts/>
+
         <Link className="product container" href='/products' style={{color:'black', textDecoration:'None'}}>
             <h3>
               Top Products

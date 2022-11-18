@@ -35,6 +35,7 @@ var Description = ({detail, food}) =>{
         <DescriptionProducts
             productDetails = {product_details}
         />
+        <hr/>
         <ItemInfo />
     </> 
 }

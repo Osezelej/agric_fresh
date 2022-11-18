@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useState } from 'react';
 var Product = (props)=>{
     // organising the rating of defferent product
     let {foodDetail} = props
