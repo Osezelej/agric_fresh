@@ -72,6 +72,21 @@ background-color:rgb(198, 200, 201);
   gap: 5px;
 }
 
+.cart_add{
+  position: fixed;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  width: 100vw;
+  bottom: 0;
+  z-index: 1;
+  background-color: white;
+}
+.cart_add button{
+padding: 5px 15px;
+font-weight: 700;
+}
+
 .cart-button{
   padding: 5px 20px;
   border-radius: 25px;
@@ -138,6 +153,57 @@ background-color:rgb(198, 200, 201);
  padding: 2%;
 }
 
+.detail-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.detail-image{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.detail-sale h4{
+  margin-top:10px ;
+}
+
+.description_image{
+  align-self: center;
+  height: 200px;
+  width: 70vw;
+  object-fit: contain;
+  padding: auto;
+  cursor:zoom-in;
+}
+.description_image_small{
+  height: 80px;
+  width: 80px;
+  border-style: solid;
+  border-color: #198754;
+  border-width: 2px;
+  border-radius: 5px;
+
+}
+.detail-sale-des{
+  border-style: solid;
+  border-color: #198754;
+  border-radius: 7px;
+  border-width: 1px;
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.nutrition_fact_list li{
+  list-style: none;
+  padding: 0;
+}
+.nutrition_fact_list ul{
+  padding: 0;
+}
 .email_input{
   background-color: #f1f1f1;
   border-color: #f1f1f1;
@@ -253,7 +319,6 @@ background-color:rgb(198, 200, 201);
   padding: 20px;
   box-shadow: 3px 1px 10px #dddcdc;
   
-
 }
 
 .links{

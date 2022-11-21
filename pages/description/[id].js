@@ -3,6 +3,7 @@ import Head from 'next/head';
 import DescriptionProducts from '../../components/description/product';
 import Product from '../../components/productComponent';
 import ItemInfo from '../../components/itemInfo';
+
 export const getStaticPaths = async()=>{
     const data = dataApi
     const path = data.map((details)=>{
@@ -36,7 +37,10 @@ var Description = ({detail, food}) =>{
             productDetails = {product_details}
         />
         <hr/>
-        <ItemInfo />
+        <div className='cart_add'>
+            <ItemInfo />
+            <button className='btn btn-success'> Add to Cart</button>
+        </div>
     </> 
 }
 export default Description;

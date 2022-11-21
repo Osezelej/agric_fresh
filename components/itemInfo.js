@@ -4,7 +4,6 @@ var ItemInfo = ()=>{
 return <>
     <div>
         <AddItem/>
-        <hr/>
     </div>
 </>
 
