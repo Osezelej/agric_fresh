@@ -24,10 +24,10 @@ export const getStaticProps = async (context)=>{
     return{
         props:{
             detail:data,
-            food:dataApi.slice(0, 4)
-        }
+            food:dataApi.slice(0, 4)}
     }
 }
+
 var Description = ({detail, food}) =>{
     console.log(detail[0])
     let product_details = detail[0]
