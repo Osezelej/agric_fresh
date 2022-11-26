@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const styles = {
     addItemContainer:{
@@ -20,14 +20,27 @@ const styles = {
         margin:'0'
     }
 }
-const  AddItem = ()=>{
+
+const  AddItem = (props)=>{
 
     const [num, setNum] = useState(1)
+    useEffect(()=>{
+        props.changePrice(`N${parseInt(props.price.slice(1, props.price.length)) * num}`)
+    },[num])
+
     return<>
         <div className="addItem" style={styles.addItemContainer}>
-        <button onClick={()=>(num > 1? setNum(num - 1): setNum(1))} style={styles.button}>-</button>
+        <button onClick={()=>{
+           
+            num > 1? setNum(num - 1): setNum(1)
+            
+        
+        }} style={styles.button}>-</button>
         <p style={styles.numberStyle}>{num}</p>
-        <button onClick={()=>(num >= 1? setNum(num + 1): setNum(1))} style={styles.button}>+</button></div>
+        <button onClick={()=>{
+            num >= 1? setNum(num + 1): setNum(1)
+            
+        }}  style={styles.button}>+</button></div>
     </>
 }
 

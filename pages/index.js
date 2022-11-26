@@ -21,8 +21,6 @@ var home = ({food, testimonies}) =>{
   return (<div >
         <Slider data = {data}/>
         <Adverts/>
-
-        <Link className="product container" href='/products' style={{color:'black', textDecoration:'None'}}>
             <h3>
               Top Products
             </h3>
@@ -34,7 +32,7 @@ var home = ({food, testimonies}) =>{
               isProduct = {false}
               />))}
             </div> 
-        </Link>
+        
         <h3>What People Say</h3>
         <div className="testimony container">
            

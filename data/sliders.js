@@ -12,7 +12,7 @@ const dataApi = [
 	'Price': "N4500",
 	'description': '',
 	'rating': 3,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:2,
@@ -21,7 +21,7 @@ const dataApi = [
 	'Price': "N2500",
 	'description': '',
 	'rating': 4,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {	id:3,
 	'Name': 'Titus Fish', 
@@ -29,7 +29,7 @@ const dataApi = [
 	'Price': "N1700",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:4,
@@ -38,7 +38,7 @@ const dataApi = [
 	'Price': "N1200",
 	'description': '',
 	'rating': 3,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:5,
@@ -47,7 +47,7 @@ const dataApi = [
 	'Price': "N1300",
 	'description': '',
 	'rating': 0,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:6,
@@ -56,7 +56,7 @@ const dataApi = [
 	'Price': "N700",
 	'description': '',
 	'rating': 1,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:7,
@@ -65,7 +65,7 @@ const dataApi = [
 	'Price': "N1500",
 	'description': '',
 	'rating': 3,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:8,
@@ -74,7 +74,7 @@ const dataApi = [
 	'Price': "N500",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:9,
@@ -83,7 +83,7 @@ const dataApi = [
 	'Price': "N500",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:10,
@@ -92,7 +92,7 @@ const dataApi = [
 	'Price': "N500",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:11,
@@ -101,7 +101,7 @@ const dataApi = [
 	'Price': "N200",
 	'description': '',
 	'rating': 1,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:12,
@@ -110,7 +110,7 @@ const dataApi = [
 	'Price': "N200",
 	'description': '',
 	'rating': 1,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:13,
@@ -119,7 +119,7 @@ const dataApi = [
 	'Price': "N12200",
 	'description': '',
 	'rating': 4,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:14,
@@ -128,7 +128,7 @@ const dataApi = [
 	'Price': "N1250",
 	'description': '',
 	'rating': 2,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:15,
@@ -137,16 +137,16 @@ const dataApi = [
 	'Price': "N1350",
 	'description': '',
 	'rating': 4,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:16,
-	'Name': 'Locust beans', 
-  	'Image':"https://marketsng.fra1.digitaloceanspaces.com/images/U5YGMfeJotBRwNI5C8IkbYZ4i44NLhyqGeBvttjY.jpeg",
+	Name: 'Locust beans', 
+  	Image:"https://marketsng.fra1.digitaloceanspaces.com/images/U5YGMfeJotBRwNI5C8IkbYZ4i44NLhyqGeBvttjY.jpeg",
 	'Price': "N1350",
 	'description': '',
 	'rating': 2,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:17,
@@ -155,7 +155,7 @@ const dataApi = [
 	'Price': "N750",
 	'description': '',
 	'rating': 3,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:18,
@@ -164,7 +164,7 @@ const dataApi = [
 	'Price': "N1550",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:19,
@@ -173,7 +173,7 @@ const dataApi = [
 	'Price': "N1550",
 	'description': '',
 	'rating': 5,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:20,
@@ -182,7 +182,7 @@ const dataApi = [
 	'Price': "N4550",
 	'description': '',
 	'rating': 2,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:21,
@@ -191,7 +191,7 @@ const dataApi = [
 	'Price': "N2000",
 	'description': '',
 	'rating': 4,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:22,
@@ -200,7 +200,7 @@ const dataApi = [
 	'Price': "N40000",
 	'description': '',
 	'rating': 0,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 {
 	id:23,
@@ -209,7 +209,7 @@ const dataApi = [
 	'Price': "N700",
 	'description': '',
 	'rating': 6,
-	'Nutritional Benefit': [],
+	'NB': [],
 },
 ]
 

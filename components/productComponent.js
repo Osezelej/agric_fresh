@@ -1,5 +1,22 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import axios from 'axios'; 
 var Product = (props)=>{
+
+    async function HandleCart (){
+        // let options = {
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify(props.foodDetail)
+        // }
+    
+        axios.post('http://127.0.0.1:8000/v1/fooddetails', props.foodDetail)
+     
+        
+    }
+
     // organising the rating of defferent product
     let {foodDetail} = props
     let goodRating = foodDetail.rating
@@ -17,7 +34,7 @@ var Product = (props)=>{
 
     return <>
     <div className='items'>
-    <Link href={props.isProduct?`/description/${foodDetail.Name}`:'/products'}>
+    <a href={props.isProduct?`/description/${foodDetail.Name}`:'/products'}>
             <div className='image'>
                 <img id='productImages' src={foodDetail.Image} />
             </div>
@@ -30,12 +47,10 @@ var Product = (props)=>{
                     <p className='Name'>{foodDetail.Name}</p>
                     <p className='price'>{foodDetail.Price}</p>
                 </div>
-                <button className='btn btn-success cart-button'>Add to Cart</button>
             </div>
-            </Link>
+            </a>
+            <button className='btn btn-success cart-button' onClick={HandleCart}>Add to Cart</button>
         </div>
-    
-
     </>
 }
 export default Product
