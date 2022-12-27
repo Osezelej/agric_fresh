@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/dist/client/link";
-
+import Router from 'next/router'
 export function Header(){
 
     return <>
@@ -16,7 +16,7 @@ export function Header(){
                         <input className="form-control search_input" placeholder="Category | search for product... "/>
                         <button className="btn btn-outline-success search_button"><Image src={'/search.png'} width={20} height={20}/></button>
 
-                        <div className="account">
+                        <div className="account" onClick={()=>(Router.push('/account'))}>
                         <Image src={'/account.png'} width={20} height={20}/>
                         <p className="icon_info">Account</p>
                         </div>

@@ -1,5 +1,3 @@
-import cartData from "../data/cartData";
-import Product from "../components/productComponent";
 import axios from 'axios';
 import { CartItems } from "../components/cart/cartItems";
 export const getStaticProps = async ()=>{
@@ -25,21 +23,25 @@ const CartPage = ({foodData})=>{
                     isProduct = {false}
                     />}):<div><h3>No Item have been booked</h3></div>}
         </div>
-        <h4>Cart totals</h4>
-        <div className="cart-totals" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-                <div className="totalNamePrice">
-                    <p className="Name">subtotal</p>
-                    <p className="price" style={{marginBottom:'0'}}>N20000</p>
-                </div>
-                <hr style={{backgroundColor:'GrayText'}}/>
-                <div className="totalNamePrice">
-                    <p className="Name" style={{fontWeight:850}}>Total</p>
-                    <p className="price" style={{marginBottom:'0'}}>N20000</p>
+        <div className="proceed-to">
+            <h4 style={{fontWeight:700, marginBottom:20}}>Cart totals</h4>
+            <div className="cart-totals" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                    <div className="totalNamePrice">
+                        <p className="Name">subtotal</p>
+                        <p className="price" style={{marginBottom:'0'}}>N20000</p>
+                    </div>
+                    <hr style={{backgroundColor:'GrayText'}}/>
+                    <div className="totalNamePrice">
+                        <p className="Name" style={{fontWeight:850}}>Total</p>
+                        <p className="price" style={{marginBottom:'0'}}>N20000</p>
 
-                </div>
-                <button className="btn btn-success" style={{marginTop:'30px'}}>Proceed To Checkout</button>
-                
+                    </div>
+                    <button className="btn btn-success" style={{marginTop:'30px'}}>Proceed To Checkout</button>
+                    
+            </div>
+            <textarea type={'text'} placeholder='Enter any additional information' className="proceed-Input" />
         </div>
+       
     </div>
     
     </>

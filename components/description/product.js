@@ -1,5 +1,5 @@
-import ItemInfo from "../itemInfo"
-var DescriptionProducts = ({productDetails})=>{
+
+var DescriptionProducts = ({productDetails, productDetailsPrice})=>{
     // let {foodDetail} = props
     let goodRating = productDetails.rating
     let badRating = 5 - goodRating
@@ -31,10 +31,10 @@ var DescriptionProducts = ({productDetails})=>{
                         {badRating ? badRatingArray.map((x)=>(<img key={x} src='/badstar.png'/>)):null}
                     </div>
                     <div className='Name-price'>
-                        <p className='price _price'>{productDetails.Price}</p>
+                        <p className='price _price'>{productDetailsPrice}</p>
                     </div>
                     <div className='cart_add_bigScreen'>
-                        <ItemInfo />
+                        
                         <button className='btn btn-success'> Add to Cart</button>
                     </div>
             </div>

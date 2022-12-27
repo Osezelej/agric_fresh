@@ -1,9 +1,7 @@
 import { dataApi} from '../../data/sliders';
-import Head from 'next/head';
 import DescriptionProducts from '../../components/description/product';
-import Product from '../../components/productComponent';
-import ItemInfo from '../../components/itemInfo';
-
+import AddItem from '../../components/increaseNumber';
+import { useState } from 'react';
 export const getStaticPaths = async()=>{
     const data = dataApi
     const path = data.map((details)=>{
@@ -29,16 +27,25 @@ export const getStaticProps = async (context)=>{
 }
 
 var Description = ({detail, food}) =>{
-    console.log(detail[0])
     let product_details = detail[0]
+    console.log(product_details)
     
+    const [price, setPrice] = useState(product_details.Price)
+    function changePrice(price) {
+        setPrice(price)
+    }
+ 
     return <>
         <DescriptionProducts
             productDetails = {product_details}
+            productDetailsPrice = {price}
         />
         <hr/>
         <div className='cart_add'>
-            <ItemInfo />
+            <AddItem
+                price ={product_details.Price}
+                changePrice = {changePrice}
+            />
             <button className='btn btn-success'> Add to Cart</button>
         </div>
     </> 

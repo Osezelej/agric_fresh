@@ -28,6 +28,25 @@ a{
   border-color: #198754;
 }
 
+.account-image{
+  display: none;
+  border-radius: 10px;
+}
+.account-body{
+  background-image: url('/public/Agric.png');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+  
+
+
+
+}
+.account-body h1{
+  font-size: 45px;
+}
 .ad-container{
   margin: 3% 2%;
   display:flex;
@@ -85,7 +104,7 @@ background-color:rgb(198, 200, 201);
   padding: 10px 15px;
   width: 100vw;
   bottom: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: white;
 }
 .cart_add button{
@@ -350,6 +369,17 @@ align-items: center;
   grid-column: 1 / span 5;
   align-items: center;
 }
+.inputs-body{
+display: flex;
+flex-direction: column;
+gap:20px;
+background-color: #e2e2e2;
+width: 90vw;
+padding: 20px 10px;
+border-radius: 10px;
+align-content: center;
+
+}
 
 .input-col{
   display: flex;
@@ -418,7 +448,15 @@ z-index: 3;
   margin-top: 30px;
 }
 
+.proceed-Input{
+  margin-top: 30px;
+  width: 100%;
+  height: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: large;
 
+}
 h3{
   text-align: center;
 
@@ -582,7 +620,9 @@ ul li::before{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-
+.account-body{
+  column-gap: 20px;
+}
   .account img{
     padding: 5px 5px;
     height: 45px;
@@ -591,6 +631,24 @@ ul li::before{
     border-radius: 50px;
     border-width: 1px;
     border-color: #198754;
+  }
+  .account-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color:rgba(252, 252, 3, 0.103);
+
+  }
+  .account-image img{
+    width: 50%;
+    height:55%;
+    object-fit: fill;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: #76a891;
+    border-width: 2px;
+    
   }
   .ad1{
   background-color:rgb(174, 226, 250);
@@ -641,7 +699,31 @@ ul li::before{
     border-width: 1px;
     border-color: #198754;
   }
+  .cart-main-container{
+    display: flex;
+    margin: 10px 30px;
+    border-style:solid;
+    border-color: #c0e7d5;
+    border-width:2px ;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 30px;
+  }
+  .proceed-to{
+    width: 60%;
+  }
+  .proceed-Input{
+    margin-top: 30px;
+    width: 100%;
+    height: 30%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: larger;
 
+  }
+  .cart-totals{
+    margin: 0;
+  }
   .category{
     min-width: max-content;
     font-size: 17px;
@@ -780,7 +862,18 @@ ul li::before{
     gap: 6px;
     padding: 2.6%;
   }
-
+  .inputs-body{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: #e2e2e2;
+    width: 50vw;
+    padding: 20px 30px;
+    border-radius: 10px;
+    align-content: center;
+    justify-self: center;
+    
+    }
   .links{
     display: flex;
    color: rgb(255, 244, 244);
