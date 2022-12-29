@@ -7,8 +7,7 @@ var Account = ()=>{
         <div className="account-body">
             
             <div className="login_body">
-                
-                <div className='inputs-body'>
+        rrrrr        <div className='inputs-body'>
                     <h1>Login</h1>
                     <div>
                         <h4>Username</h4>
